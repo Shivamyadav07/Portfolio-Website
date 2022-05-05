@@ -314,6 +314,56 @@ section .title::after {
 
 
 /* skills section styling */
+.html{
+  text-align: center;
+  visibility: hidden;
+}
+.skill1:hover .html {
+  visibility: visible;
+}
+.mycss{
+  text-align: center;
+  visibility: hidden;
+}
+.skill2:hover .mycss {
+  visibility: visible;
+}
+.javascript{
+  text-align: center;
+  visibility: hidden;
+}
+.skill3:hover .javascript {
+  visibility: visible;
+}
+.nodejs{
+  text-align: center;
+  visibility: hidden;
+}
+.skill4:hover .nodejs {
+  visibility: visible;
+}
+.mongodb{
+  text-align: center;
+  visibility: hidden;
+}
+.skill5:hover .mongodb {
+  visibility: visible;
+}
+.react{
+  text-align: center;
+  visibility: hidden;
+}
+.skill6:hover .react {
+  visibility: visible;
+}
+.redux{
+  text-align: center;
+  visibility: hidden;
+}
+.skill7:hover .redux {
+  visibility: visible;
+}
+
 .skills {
   color: #fff;
   background: #111;
