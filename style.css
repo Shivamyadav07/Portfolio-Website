@@ -265,12 +265,16 @@ section .title::after {
   background: #fff;
 }
 .services .serv-content .card {
-  width: 500px;
-  height: 400px;
+  width: 550px;
+  height: 550px;
   text-align: left;
   border-radius: 6px;
-  /* padding: 50px 25px; */
+  padding-left: 35px;
+  padding-right: 25px;
+  padding-top: 20px;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 40px;
   transition: all 0.3s ease;
 }
 .card img {
@@ -280,6 +284,10 @@ section .title::after {
 .services .serv-content .card .box {
   transition: all 0.3s ease;
 }
+/* .serv-content:nth-child(3){
+  margin-top: 500 px;
+  border: 5px solid;
+} */
 .services .serv-content .card:hover .box {
   transform: scale(1.05);
 }
