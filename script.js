@@ -1,3 +1,11 @@
+fetch("https://super-paint-flamingo.glitch.me/PremiumFruits")
+.then((res)=>{
+    console.log(res.data);
+})
+.catch((err)=>{
+    console.log(err.message);
+})
+
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
