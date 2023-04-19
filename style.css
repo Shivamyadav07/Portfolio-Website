@@ -43,7 +43,6 @@ section {
 .about,
 .services,
 .skills,
-.teams,
 .contact,
 footer {
   font-family: "Poppins", sans-serif;
@@ -390,12 +389,6 @@ section .title::after {
 }
 
 .skills-content {
-  width: 80%;
-  margin: auto;
-  display: grid;
-  grid-column-gap: 80px;
-  grid-row-gap: 20px;
-  grid-template-columns: repeat(5, 1fr);
   justify-content: center;
 }
 
@@ -403,6 +396,8 @@ section .title::after {
   height: 85px;
   width: 85px;
 }
+
+/* -------------------------------------------------------------------------------- */
 
 /* contact section styling */
 .contact {
@@ -415,28 +410,51 @@ section .title::after {
   display: flex;
 }
 
+/* ------------------------------github section------------------------ */
+.gitStatsImg {
+  width: 50%;
+}
 
-/* responsive media query start */
-@media (max-width: 1104px) {
+.gitStats .title,.gitCalendar .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/*----------------------------- responsive media query start ---------------------------*/
+@media (max-width: 1230px) {
   .about .about-content .left img {
     height: 350px;
     width: 350px;
   }
 
   .skills-content {
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-column-gap: 80px;
-    grid-row-gap: 20px;
-    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
+  }
+
+  .services .serv-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+
+  .gitStatsImg {
+    width: 50%;
   }
 }
 
 @media (max-width: 991px) {
   .max-width {
     padding: 0 50px;
+  }
+
+  .services .serv-content .card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
   }
 }
 
@@ -517,10 +535,23 @@ section .title::after {
     width: 100%;
     margin-bottom: 35px;
   }
+
+  .contact-content {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .skills-content {
+    width: 85%;
+    margin: auto;
+    gap: 85px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 
-@media (max-width: 690px) {
+@media (max-width: 770px) {
   .max-width {
     padding: 0 23px;
   }
@@ -540,6 +571,23 @@ section .title::after {
   .services .serv-content .card {
     width: 100%;
   }
+
+  .skills-content {
+    width: 80%;
+    margin: auto;
+    gap: 80px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .contact-content {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .gitStatsImg {
+    width: 70%;
+  }
 }
 
 
@@ -557,17 +605,19 @@ section .title::after {
     font-size: 19px;
   }
 
-  .contact .right form .fields {
-    flex-direction: column;
+  .contact-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    justify-content: center;
   }
 
-  .contact .right form .name,
-  .contact .right form .email {
-    margin: 0;
+  .gitStatsImg {
+    width: 90%;
   }
 
-  .right form .error-box {
-    width: 150px;
+  .email {
+    width: 90%;
   }
 
   .scroll-up-btn {
@@ -577,13 +627,5 @@ section .title::after {
     width: 35px;
     font-size: 23px;
     line-height: 38px;
-  }
-}
-
-@media (max-width: 425px) {
-  .skills-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
   }
 }
